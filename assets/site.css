@@ -26,3 +26,50 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .faq[open] .faq-sign{background:#C9EFCF !important}
 .faq[open] .faq-sign::before{content:'\2212'}
 [hidden]{display:none !important}
+
+/* ---------- Phones and small tablets ---------- */
+@media (max-width: 720px){
+  /* calmer section rhythm */
+  [style*="padding: 120px 24px"], [style*="padding: 112px 24px"]{padding:72px 20px !important}
+  [style*="padding: 88px 24px 104px"]{padding:40px 20px 64px !important}
+  [style*="padding: 96px 24px"]{padding:64px 20px !important}
+  [style*="padding: 72px 24px 96px"], [style*="padding: 72px 24px"]{padding:40px 20px 64px !important}
+  section > div[style*="gap: 56px"]{gap:36px !important}
+  h2{font-size:34px !important}
+  [style*="font-size: clamp(34px, 4.4vw, 56px)"]{font-size:34px !important}
+
+  /* hero visual: two cards stacked, no overlap */
+  [style*="min-height: 560px; padding: 24px"]{min-height:0 !important;padding:16px !important;gap:12px !important}
+  [style*="align-self: flex-start; width: 64%"]{width:100% !important;min-width:0 !important}
+  [style*="align-self: flex-end; width: 66%"]{width:100% !important;min-width:0 !important;margin-top:0 !important}
+
+  /* "What's inside": no pinned column on phones (it overlapped the list) */
+  [style*="position: sticky; top: 112px"]{position:static !important}
+
+  /* comparison table and formula rows fit the screen */
+  [style*="min-width: 520px"]{min-width:0 !important}
+  [style*="padding: 20px 28px"]{padding:14px 14px !important;font-size:15px !important}
+  [style*="padding: 22px 28px"]{padding:16px 16px !important}
+
+  /* photo sections: fade top to bottom so text sits on a calm background */
+  [style*="linear-gradient(100deg, #F5F6F3"]{background:linear-gradient(180deg, #F5F6F3 0%, rgba(245,246,243,0.92) 40%, rgba(245,246,243,0.55) 75%, rgba(245,246,243,0.35) 100%) !important}
+  [style*="linear-gradient(90deg, #0E0F0E"]{background:linear-gradient(180deg, #0E0F0E 0%, rgba(14,15,14,0.9) 35%, rgba(14,15,14,0.55) 70%, rgba(14,15,14,0.7) 100%) !important}
+
+  /* four layers: drop the + and = between stacked cards */
+  [style*="font-size: 28px; color: #6E726E"]{display:none !important}
+
+  /* steps, trust tiles, pricing, FAQ */
+  [style*="gap: 48px 32px"]{gap:32px !important}
+  [style*="padding: 32px; display: flex; flex-direction: column; gap: 12px; min-height: 180px"]{padding:24px !important;min-height:0 !important}
+  [style*="padding: 40px; box-sizing"]{padding:28px 22px !important}
+  [style*="padding: 0 56px 28px 0"]{padding:0 0 24px 0 !important}
+
+  /* 3D jar panels: shorter on phones */
+  [style*="min-height: 600px"], [style*="min-height: 620px"]{min-height:440px !important}
+  [style*="padding: 20px 28px"] svg{flex:0 0 auto}
+  [style*="min-height: 170px"]{min-height:0 !important}
+}
+@media (max-width: 380px){
+  [style*="font-size: clamp(48px, 7vw, 92px)"]{font-size:44px !important}
+  [style*="font-size: clamp(44px, 6vw, 76px)"]{font-size:40px !important}
+}
