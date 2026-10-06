@@ -73,3 +73,10 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
   [style*="font-size: clamp(48px, 7vw, 92px)"]{font-size:44px !important}
   [style*="font-size: clamp(44px, 6vw, 76px)"]{font-size:40px !important}
 }
+
+/* Final call to action: wide dot grid on desktop, square 5 x 7 grid on phones */
+.cta-dots-mobile{display:none}
+@media (max-width: 720px){
+  .cta-dots-desktop{display:none}
+  .cta-dots-mobile{display:block}
+}
